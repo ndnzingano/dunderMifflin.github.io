@@ -12,3 +12,5 @@
 * Botão 2: Mais Informações.
 
 ### Seção 1: Features
+* 
+
