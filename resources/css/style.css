@@ -21,6 +21,10 @@ header {
 
 }
 
+h1, h2, h3 {
+    font-weight: 300;
+}
+
 h1 {
     margin-top: 0;
     margin-bottom: 20px; /*Ajustando espaçamento*/
@@ -45,10 +49,63 @@ h2 {
 
 }
 
+.title-2 {
+    color: #555;
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center; /*Centralizando o texto*/
+    margin-bottom: 30px;
+    width: 70%; /*ocupa 70%, sobra 30%*/
+    margin-left: 15%; /*15% para cada lado*/
+
+}
+
+h3 {
+    font-size: 150%;
+    font-family: 'Raleway';
+    text-transform: uppercase;
+    word-spacing: 2px;
+    text-align: center; /*Centralizando o texto*/
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+
+
+h4 {
+    font-size: 110%;
+    text-align: center; /*Centralizando o texto*/
+    margin-right: 20%; /*Centralizar*/
+    margin-top: 10px;
+
+
+}
+
+h4:after {
+    display: block;
+    height: 2px;
+    background-color: #43778e;
+    content: " "; /*Conteúdo do item*/
+    width: 100px; /*Comprimento do item*/
+    margin: 0 auto; /*Centralizar*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
 em{
     font-weight: 400;
 
 }
+
+.long-copy {
+    line-height:145%;
+    width: 70%; /*ocupa 70%, sobra 30%*/
+    margin-left: 15%; /*15% para cada lado*/
+}
+
 .hero-text-box {
     position: absolute;
     width: 1000px; /*verificar se esse valor é adequado para seu monitor*/
@@ -163,4 +220,36 @@ em{
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #A9E5FE;
+}
+
+ion-icon {
+    font-size: 350%; /*Tamanho do ícone*/
+    display: block;
+    color: #e67e22; /*cor da fonte = cor do ícone*/
+    margin-bottom: 10px; /*espaço entre o ícone e o título do feature*/
+}
+
+section {
+    padding: 80px 0;
+}
+.box {
+    padding: 1%; /*dá um pequeno espaçamento entre o conteúdo e o container.*/
+    margin-left: 5%;
+
+}
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+    margin-right: 15%;
+    text-align: left;
+
+}
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
+
+.feat-img {
+    width: 75%;
+    height: auto;
+    border-radius: 50%;
 }
