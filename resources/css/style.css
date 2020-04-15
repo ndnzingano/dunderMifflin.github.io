@@ -237,6 +237,10 @@ section {
     margin-left: 5%;
 
 }
+
+p {
+    text-align: center;
+}
 .box p {
     font-size: 90%;
     line-height: 145%;
