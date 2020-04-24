@@ -257,3 +257,125 @@ p {
     height: auto;
     border-radius: 50%;
 }
+
+.images-showcase li{
+    display: block; /*permite outros elementos ao lado*/
+    float: left; /*Faz com que os elementos sejam colocados lado a lado*/
+    width: 25%; /*cada item da lista terá 25% de largura em relação a tela... 100/4*/
+}
+
+.photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000; /*Cor de fundo - preto*/
+}
+
+.photo img {
+    opacity: 0.7; /*deixa a imagem um pouco transparente*/
+    width: 100%;
+    height: auto; /*para não desfigurar a imagem*/
+    transform: scale(1.15); /*imagem aumentada em 15%*/
+    transition: transform 0.5s, opacity 0.5s; /*Adiciona um período de transição quando houver alteração na propriedade transform ou opacity*/
+}
+
+.photo img:hover {
+    opacity:1;
+    transform: scale(1.03); /*escala da imagem com valor padrão*/
+}
+
+.section-photos {
+    padding: 0;
+}
+
+/* ----------------------------------------------- */
+/* Seção Lista de Passos (Section Steps) */
+/* ----------------------------------------------- */
+
+.title-steps::after {
+    display: block;
+    height: 2px;
+    background-color: #43778e;
+    content: " "; /*Conteúdo do item*/
+    width: 200px; /*Comprimento do item*/
+    margin: 0 auto; /*Centralizar*/
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/*Definindo cor de fundo para essa seção*/
+.section-steps {
+    background-color: #f4f4f4;
+}
+
+/*Regra para selecionar apenas o primeiro box/container, neste caso será o da esquerda*/
+/*Nota: First significa Primeiro*/
+.steps-box:first-child {
+    margin-top: 30px;
+    text-align: right; /*textos ou conteúdos do tipo inline (ex. img) alinhados à direita*/
+    padding-right: 3%; /*usamos porcentagem para ser responsivo*/
+}
+
+/*Regra para selecionar apenas o último box/container, neste caso será o da direita*/
+/*Nota: Last significa Último*/
+.steps-box:last-child {
+    text-align: left;
+    padding-left: 3%; /*usamos porcentagem para ser responsivo*/
+    margin-top: 70px;
+}
+
+/*Definindo o tamanho da imagem do container da esquerda*/
+.app-screen {
+    width: 40%; /*40% do tamanho do box/container*/
+}
+
+.step {
+    margin-bottom: 50px;
+}
+
+.step div {
+    color: #43778e; /*Define cor da fonte*/
+    border: 2px solid #43778e; /*define uma borda laranja*/
+    display: inline-block;/*para permitir containers lado a lado*/
+    border-radius: 50%; /*Arredonda as bordas*/
+    height: 55px;/*Define altura*/
+    width: 55px;/*Mesmo valor da altura, afinal queremos um circulo*/
+    /*Ajustando o texto interno*/
+    text-align: center;/*Texto centralizado na horizontal, não na vertical*/
+    padding:  8px 5px 5px 5px;/*espaço entre texto e borda do container*/
+    float: left;
+    font-size: 150%;
+    margin-right: 30px;/*espaço entre essa div e o paragráfo - talvez varie de acordo com o tamanho dos paragráfos*/
+}
+
+.step p {
+    text-align: left;
+    padding-top:15px ;
+}
+
+.btn-app img {
+    height:50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.step:last-of-type {
+    margin-bottom: 80px;
+}
+
+.clearfix {
+    zoom:1;
+    }
+    
+/*limpa o float depois de um elemento.*/
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height:0;
+    visibility:hidden;
+}
+
+
+
+
