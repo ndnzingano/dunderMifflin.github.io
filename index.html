@@ -2,12 +2,17 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Importação do normalize css para arrumar bugs -->
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <!-- Importação do sistema de grid -->
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <!-- Importação do nossa folha de estilo -->
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <!-- Importação media queries-->
+    <link rel="stylesheet" type="text/css" href="resources/css/media.css">
+
     <!-- Importação da fonte Lato -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,400&family=Raleway&display=swap" rel="stylesheet">
     <title>Dunder Mifflin Paper Company Scranton</title>
@@ -15,25 +20,27 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="sticky">
             <div class="row">
                 <img src="resources/img/logo.png" alt=" dunder mifflin logo" class="logo">
-                <ul class="main-nav">
+                <ul class="main-nav js--main-nav">
                     <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#" >Produtos</a></li>
                     <li><a href="#">Localização</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
+                
+                <a class="mobile-nav-icon  js--nav-icon"><ion-icon name="menu" class="icon ion-navicon-round js--nav-icon"></ion-icon></a>
             </div>
         </nav>
         <div class="hero-text-box">
             <h1>Dunder Mifflin: <br></h1>
             <h2>Soluções de <em>papel</em> <br> para <em>qualquer</em> situação.</h2>
-            <a class="btn btn-full" href="#">Comprar agora</a>
-            <a class="btn btn-ghost" href="#">Mais informações</a>
+            <a class="btn btn-full js--scroll-to-photos" href="#section-steps">Comprar agora</a>
+            <a class="btn btn-ghost js--scroll-to-contact" href="#section-form">Mais informações</a>
         </div>
     </header>
-    <section class="section-features">
+    <section class="section-features js--section-features">
         <div class="row">
             <h2 class="title-2">Uma Empresa com Pessoas para Pessoas que Precisam de Papel</h2>
             <p class="long-copy">
@@ -72,7 +79,7 @@
             </div>
         </div>
     </section>
-    <section class="section-photos">
+    <section class="section-photos  js--section-photos" id="section-photos">
         <ul class="images-showcase clearfix">
             <li>
                 <figure class="photo">
@@ -118,7 +125,7 @@
             </li>
         </ul>
     </section>
-    <section class="section-steps">
+    <section class="section-steps" id="section-steps">
         <!--Título da seção -->
         <h3 class="title-underlines">Confuso sobre as suas necessidades de papel?</h3>
         <div class="row">
@@ -146,8 +153,10 @@
                     <p>Entre em contato com um dos nossos colaboradores hoje!</p>
                 </div>
                     <!-- Botões para os aplicativos -->
-            <a href="#" class="btn-app"><img src="resources/img/download-app.svg" alt="Botão App Store"></a>
-            <a href="#" class="btn-app"><img src="resources/img/download-app-android.png" alt="Botão Play Store"></a>
+                    <div class="btn-app-div">
+                        <a href="#" class="btn-app"><img src="resources/img/download-app.svg" alt="Botão App Store"></a>
+                        <a href="#" class="btn-app"><img src="resources/img/download-app-android.png" alt="Botão Play Store"></a>
+                    </div>
             </div>
         </div>
     </section>
@@ -207,7 +216,7 @@
             </div>
         </div>
     </section>
-    <section class="section-form">
+    <section class="section-form" id="section-form">
         <div class="row">
             <!-- Aqui ir� o t�tulo da primeira div -->
             <h3 class="title-underline">Dunder Mifflin, aqui é a Pam!</h3>
@@ -253,6 +262,10 @@
 
     </footer>
 
+    
+    <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    
+  <script src="/resources/script.js"></script>
 </body>
 </html>
-<script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
